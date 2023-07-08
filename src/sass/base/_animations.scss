@@ -1,0 +1,9 @@
+@keyframes header-paral-on {
+    0% {transform: translateY(0);}
+  100% {transform: translateY(-6.14rem);}
+}
+
+@keyframes header-paral-off {
+    0% {transform: translateY(-6.14rem);}
+  100% {transform: translateY(0);}
+}

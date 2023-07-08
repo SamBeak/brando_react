@@ -1,0 +1,26 @@
+// container mixin , max-width 83.57rem
+@mixin containerStyle{
+    width: 100%;
+    max-width: 83.57rem;
+    margin: 0 auto;
+}
+// gap mixin , padding 0 1.07rem
+@mixin gapStyle{
+    width: 100%;
+    padding: 0 1.07rem;
+}
+// transition mixin , transition all 0.3s ease-in-out
+@mixin transition{
+    transition: all 0.3s ease-in-out;
+}
+// align-items
+@mixin align-items{
+    display: flex;
+    align-items: center;
+}
+// justify-content, align-items center
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
