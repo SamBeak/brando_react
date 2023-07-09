@@ -8,9 +8,9 @@ export default function Section1Component() {
         <div className="slide-container">
           <div className="slide-view">
             <ul className="slide-wrap">
-              <li className="slide"></li>
-              <li className="slide"></li>
-              <li className="slide"></li>
+              <li className="slide slide1"></li>
+              <li className="slide slide2"></li>
+              <li className="slide slide3"></li>
             </ul>
           </div>
         </div>
@@ -28,7 +28,7 @@ export default function Section1Component() {
         <a href="!#" className="arrow-btn--next"><i></i></a>
 
         {/* 인디게이트 버튼 || 페이지네이션 버튼 */}
-        <div class="page-btn-box">
+        <div className="page-btn-box">
             <span><a href="!#" className="page-btn blind on">페이지1</a></span>
             <span><a href="!#" className="page-btn blind">페이지2</a></span>
             <span><a href="!#" className="page-btn blind">페이지3</a></span>    
