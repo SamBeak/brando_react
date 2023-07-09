@@ -1,0 +1,81 @@
+#section5 {
+    width: 100%;
+    padding: 6.831%  0;
+    background: #fff;
+    .container {
+        @include containerStyle;
+        margin: 0 auto;
+        .gap {
+            width: 100%;
+            .title {
+                width: 100%;
+                text-align: center;
+                padding: 0 0 7.89%  0;
+                h2 {
+                    display: inline-block;
+                    font-size: 1.71rem;
+                    color: #e15276; 
+                    position: relative;
+                    font-weight: 700;
+                    &::before{
+                        content:'';
+                        position: absolute;
+                        left: -4.28rem;
+                        top: 50%;
+                        margin: -0.5px 0 0 0;
+                        width: 2.85rem;
+                        height: 1px;
+                        background: #93e4cf;
+                    }                           
+                    &::after{
+                        content:'';
+                        position: absolute;
+                        right: -4.28rem;
+                        top: 50%;
+                        margin: -0.5px 0 0 0;
+                        width: 2.85rem;
+                        height: 1px;
+                        background: #93e4cf;
+                    }                           
+                }
+            }
+            .content {
+                width: 100%;
+                overflow: hidden;
+                .gallery-box {
+                    width: 84.35rem;
+                    margin: 0 0 0 -0.78rem;
+                    ul {
+                        width: 100%;
+                        display: flex;
+                        flex-flow: row wrap; 
+                        li {
+                            width: 25%; 
+                            .col-gap {
+                                width: auto; 
+                                margin: 0 0 0.78rem 0.78rem;
+                                overflow: hidden; 
+                                a {
+                                    display: block;
+                                    width: 100%;
+                                    figure {
+                                        width: 100%;
+                                        img {
+                                            width: 100%;
+                                            @include transition;
+                                            &:hover {
+                                                transform: scale(1.1);
+                                                opacity: 0.2;
+                                                cursor: url(../../../public/images/icon-zoom.png), auto;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
