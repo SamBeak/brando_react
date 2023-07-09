@@ -1,0 +1,335 @@
+#section2 {
+    width:100%;
+    padding: 6.831%  0;
+    background: $white-color; // #fff       
+    .container {
+        @include containerStyle;
+        margin: 0 auto;
+        .gap {
+            width:100%;
+            .title {
+                width: 100%;
+                text-align: center;
+                padding: 0 0 7.89%  0;
+                h2 {
+                    display: inline-block;
+                    font-size: 1.71rem;
+                    color: #e15276;
+                    position: relative;
+                    font-weight: 700;
+                    &::before{
+                        content:'';
+                        position: absolute;
+                        left: -4.28rem;
+                        top: 50%;
+                        margin: -0.5px 0 0 0;
+                        width: 2.85rem;
+                        height: 1px;
+                        background: $primary-color;
+                    }                           
+                    &::after{
+                        content:'';
+                        position: absolute;
+                        right: -4.28rem;
+                        top: 50%;
+                        margin: -0.5px 0 0 0;
+                        width: 2.85rem;
+                        height: 1px;
+                        background: $primary-color;
+                    }                           
+                }
+            }
+            .content {
+                width: 100%;
+                display: flex;
+                .left  {
+                    width: 50%;
+                    height: 350px;
+                    
+                    .content-box {
+                        width:100%;
+                        > ul {
+                            width:100%;
+                            display: flex;
+                            > li {
+                                width:50%;
+                                &.left-image {
+                                    width:100%;
+                                    &.on{
+                                        animation: sec2Ani1 1s ease-in-out both;
+                                    }                                            
+                                    > .gap {
+                                        padding: 0 15px;
+                                        .img-box {
+                                            width:100%;
+                                            figure {
+                                                width:100%;
+                                                position: relative;
+                                                width:18.75rem;
+                                                height:21.32rem;
+                                                // 앞면 수직회전 rotateY(0deg) => rotateY(-180deg)
+                                                img {
+                                                    z-index: 2;
+                                                    position: relative;
+                                                    width:100%;
+                                                    outline: 4px solid rgba(255,255,255, 0.3);
+                                                    outline-offset: -1.07rem;
+
+                                                    // 회전 수직회전 rotateY(0deg) rotateY(180deg)
+                                                    transform: perspective(18.75rem * 2) rotateY(0deg);
+                                                    // 뒷면 안보이게 하기
+                                                    backface-visibility: hidden;
+                                                    transition: all 0.6s ease-in-out;
+
+                                                }
+                                                // 뒷면 배경이미지
+                                                // 회전 수직회전 rotateY(0deg) rotateY(-180deg)
+                                                span {
+                                                    z-index: 1;
+                                                    position: absolute;
+                                                    left:0;
+                                                    top:0;
+                                                    display: block;
+                                                    outline: 4px solid rgba(255,255,255, 0.3);
+                                                    outline-offset: -15px;
+                                                    width:262.500px;
+                                                    height:298.594px;
+                                                    background: url(../../../public//images/wedding-img14.jpg) no-repeat 55% 0;
+                                                    background-size: cover;
+
+                                                    // 회전 수직회전 rotateY(0deg) rotateY(180deg)
+                                                    transform: perspective(18.75rem * 2) rotateY(180deg);
+                                                    // 뒷면 안보이게 하기
+                                                    backface-visibility: hidden;
+                                                    transition: all 0.6s ease-in-out;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                &.left-text  {
+                                    width:100%;
+                                    &.on{
+                                        animation: sec2Ani2 1.3s ease-in-out both;
+                                    }                                            
+                                    .gap {
+                                        padding: 0 15px;
+                                        .text-box {
+                                            width:100%;
+                                            ul {
+                                                width:100%;
+                                                li {
+                                                    text-align: left;
+                                                    width:80%;
+                                                    h2 {
+                                                        padding-bottom: 0.7rem;
+                                                        i {
+                                                            font-size: 2.85rem;
+                                                            color:$secondary-color;
+                                                        }
+                                                    }
+                                                    h3 {
+                                                        font-size: 18px;font-weight: 700; color:$secondary-color;
+                                                        line-height: 130%;letter-spacing: -0.3px;
+                                                    }
+                                                    h4 {
+                                                        font-size: 13px;font-weight: 600;
+                                                        padding: 1.42rem 0;
+                                                    }
+                                                    p {
+                                                        font-size: 0.92rem;
+                                                        font-family: 'Roboto';
+                                                        line-height: 170%;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .icon-box {
+                        user-select: none;
+                        display: flex;
+                        width:100%;
+                        padding-top: 2.14rem;
+                        text-align: center;
+                        &.on{
+                            animation: sec2Ani1 1s ease-in-out both;
+                        }                                
+                        .left  {
+                            width:50%;   
+                            a {
+                                margin: 0 0.71rem;
+                                color:#333;                                    
+                                i {
+                                    font-size: 1rem;
+                                }
+                            }                             
+                        } 
+                        .right {
+                            width:50%;
+                        } 
+                    }
+                }
+                .right {
+                    width: 50%;
+                    height: 25rem;
+                    
+                    .content-box {
+                        width:100%;
+                        > ul {
+                            width:100%;
+                            display: flex;
+                            > li {
+                                width:50%;
+                                &.left-image {
+                                    width:100%;
+                                    &.on{
+                                        animation: sec2Ani3 1.6s ease-in-out both;
+                                    }
+                                    
+                                    > .gap {
+                                        padding: 0 15px;
+                                        .img-box {
+                                            width:100%;
+                                            figure {
+                                                width:100%;
+                                                position: relative;
+                                                width:18.6rem;
+                                                height:21.32rem;
+                                                // 앞면 수직회전 rotateY(0deg) => rotateY(-180deg)
+                                                img {
+                                                    z-index: 2;
+                                                    position: relative;
+                                                    width:100%;
+                                                    outline: 0.28rem solid rgba(255,255,255, 0.3);
+                                                    outline-offset: -15px;
+
+                                                    // 회전 수직회전 rotateY(0deg) rotateY(180deg)
+                                                    transform: perspective(18.6rem * 2) rotateY(0deg);
+                                                    // 뒷면 안보이게 하기
+                                                    backface-visibility: hidden;
+                                                    transition: all 0.6s ease-in-out;
+
+                                                }
+                                                // 뒷면 배경이미지
+                                                // 회전 수직회전 rotateY(0deg) rotateY(-180deg)
+                                                span {
+                                                    z-index: 1;
+                                                    position: absolute;
+                                                    left:0;
+                                                    top:0;
+                                                    display: block;
+                                                    outline: 0.28rem solid rgba(255,255,255, 0.3);
+                                                    outline-offset: -15px;
+                                                    width:18.6rem;
+                                                    height:21.32rem;
+                                                    background: url(../../../public/images/wedding-img11.jpg) no-repeat 55% 0;
+                                                    background-size: cover;
+
+                                                    // 회전 수직회전 rotateY(0deg) rotateY(180deg)
+                                                    transform: perspective(18.6rem * 2) rotateY(180deg);
+                                                    // 뒷면 안보이게 하기
+                                                    backface-visibility: hidden;
+                                                    transition: all 0.6s ease-in-out;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                &.left-text  {
+                                    width:100%;
+                                    &.on{
+                                        animation: sec2Ani4 1.9s ease-in-out both;
+                                    }
+                                    .gap {
+                                        padding: 0 1.07rem;
+                                        .text-box {
+                                            width:100%;
+                                            ul {
+                                                width:100%;
+                                                li {
+                                                    text-align: left;
+                                                    width:80%;
+                                                    h2 {
+                                                        padding-bottom: 0.71rem;
+                                                        i {
+                                                            font-size: 2.85rem;
+                                                            color:$secondary-color;
+                                                        }
+                                                    }
+                                                    h3 {
+                                                        font-size: 1.28rem;
+                                                        font-weight: 700; 
+                                                        color:$secondary-color;
+                                                        line-height: 130%;
+                                                        letter-spacing: -0.3px;
+                                                    }
+                                                    h4 {
+                                                        font-size: 0.92rem;
+                                                        font-weight: 600;
+                                                        padding: 1.42rem 0;
+                                                    }
+                                                    p {
+                                                        font-size: 0.92rem;
+                                                        font-family: 'Roboto';
+                                                        line-height: 170%;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .icon-box {       
+                        user-select: none;                     
+                        display: flex;
+                        width:100%;
+                        padding-top: 2.14rem;
+                        text-align: center;
+                        
+                        &.on{
+                            animation: sec2Ani3 1.6s ease-in-out both;
+                        }
+                        .left  {
+                            width:50%;   
+                            a {
+                                margin: 0 0.71rem;
+                                color:#333;                                    
+                                i {
+                                    font-size: 1rem;
+                                }
+                            }                             
+                        } 
+                        .right {
+                            width:50%;
+                        } 
+                    }
+                }
+            }
+        }
+    }            
+}
+
+// 왼쪽 박스  회전
+#section2 .container .gap .content .left:hover .content-box > ul > li.left-image > .gap .img-box figure img {
+    transform: perspective(18.6rem * 2) rotateY(-180deg);
+}
+
+#section2 .container .gap .content .left:hover .content-box > ul > li.left-image > .gap .img-box figure span {
+    transform: perspective(18.6rem * 2) rotateY(0deg);
+}
+
+
+// 오른쪽 박스 회전
+#section2 .container .gap .content .right:hover .content-box > ul > li.left-image > .gap .img-box figure img {
+    transform: perspective(18.6rem * 2) rotateY(-180deg);
+}
+
+#section2 .container .gap .content .right:hover .content-box > ul > li.left-image > .gap .img-box figure span {
+    transform: perspective(18.6rem * 2) rotateY(0deg);
+}

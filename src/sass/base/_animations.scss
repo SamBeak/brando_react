@@ -1,3 +1,4 @@
+// header animation
 @keyframes header-paral-on {
     0% {transform: translateY(0);}
   100% {transform: translateY(-6.14rem);}
@@ -6,4 +7,24 @@
 @keyframes header-paral-off {
     0% {transform: translateY(-6.14rem);}
   100% {transform: translateY(0);}
+}
+// section2 animation
+@keyframes sec2Ani1 {
+  0% {transform: translateY(1000px); opacity: 0;}             
+100% {transform: translateY(   0px); opacity: 1;}
+}
+
+@keyframes sec2Ani2 {
+  0% {transform: translateY(1000px); opacity: 0;}             
+100% {transform: translateY(   0px); opacity: 1;}
+}
+
+@keyframes sec2Ani3 {
+  0% {transform: translateY(1000px); opacity: 0;}             
+100% {transform: translateY(   0px); opacity: 1;}
+}
+
+@keyframes sec2Ani4 {
+  0% {transform: translateY(1000px); opacity: 0;}             
+100% {transform: translateY(   0px); opacity: 1;}
 }
